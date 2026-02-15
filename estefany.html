@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Estefany ❤️ Yicson</title>
+
+<style>
+body{
+    margin:0;
+    padding:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background: linear-gradient(135deg, #1a001f, #ff0066);
+    font-family: 'Segoe UI', sans-serif;
+    color:white;
+    text-align:center;
+    overflow:hidden;
+}
+
+.contenedor{
+    max-width:400px;
+    animation: aparecer 2s ease-in-out;
+}
+
+img{
+    width:100%;
+    max-width:300px;
+    border-radius:20px;
+    box-shadow:0 0 30px rgba(255,0,150,0.7);
+    animation: latido 3s infinite;
+}
+
+h1{
+    margin-top:20px;
+    font-size:22px;
+}
+
+h2{
+    margin-top:10px;
+    font-weight:normal;
+    font-size:18px;
+    color:#ffe6f2;
+}
+
+button{
+    margin-top:20px;
+    padding:10px 20px;
+    border:none;
+    border-radius:25px;
+    background:#ffffff;
+    color:#ff0066;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    transform:scale(1.1);
+}
+
+#mensaje{
+    margin-top:20px;
+    font-size:18px;
+    display:none;
+    color:#fff0f5;
+}
+
+@keyframes aparecer{
+    from{opacity:0; transform:scale(0.8);}
+    to{opacity:1; transform:scale(1);}
+}
+
+@keyframes latido{
+    0%{transform:scale(1);}
+    50%{transform:scale(1.05);}
+    100%{transform:scale(1);}
+}
+</style>
+</head>
+
+<body>
+
+<div class="contenedor">
+    <img src="estefany.jpg" alt="Estefany hermosa">
+
+    <h1>Estefany ❤️ Yicson</h1>
+    <h2>Felices por siempre... aunque peleen por tonterías 😂</h2>
+
+    <button onclick="mostrarMensaje()">Toca aquí 😏</button>
+
+    <div id="mensaje">
+        Confirmado por la NASA 🚀:  
+        Son compatibles 100% 💘  
+        Yicson no se salva 😌💍
+    </div>
+</div>
+
+<script>
+function mostrarMensaje(){
+    document.getElementById("mensaje").style.display = "block";
+}
+</script>
+
+</body>
+</html>
